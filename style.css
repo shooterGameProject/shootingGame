@@ -1,122 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap%27');
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
+
 
 body{
-    min-height: 40px;
-    background-image: url("1624.jpg");
-
-
+    width: 100vh;
+    height: 100vh;
+    background-image: url('./back.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
 }
-header{
+
+.container{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    opacity: 5;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 }
 
-
-.logo{
-    color: white;
-    font-size: 30px;
-}
-
-.navigator a {
-   color: white;
-   text-decoration: none;
-    font-weight: 650;
-    margin-left: 20px;
-    padding: 6px 15px;
+/* button{
     border-radius: 20px;
-    transition: 1s;
-}
+    font-size:35px ;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%,150%);
+} */
+
+.birds{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    left: 50%;
+    /* transform: translate(-50%,250%); */
+    transition: all 1s;
+    transform: translate(-30%, -80%);
 
 
-.navigator a:hover{
-    background:gainsboro;
 }
-.desc {
-  display: flex;
-  flex-direction: column;
-  margin-right:3%;
-  margin-top: -15%;
-  text-shadow: 1px 4px 17px rgb(93 24 220);
+.birds1{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    /* transform: translate(-50%,250%); */
+    transition: all 2s;
+    transform: translate(-50%, -50%);
 
 }
-#cont{
-  height: 550px;
-  width: 550px;
-  margin: 5% 2% 2% 10%;
+.birds2{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    /* transform: translate(-50%,250%); */
+    transition: all 2s;
+    transform: translateX(-40%);
 }
-#title{
-  font-size: 3.2em;
-  font-family: 'PT Sans', sans-serif;
+.birds3{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    /* transform: translate(-50%,250%); */
+    transition: all 2s;
+    right: 50%;
+    transform: translateX(-20%);
+
 }
-.para{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:flex-end;
-  color: white;
-  height: 800px;
-  background: url("91657.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.birds4{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    /* transform: translate(-50%,250%); */
+    transition: all 1s;
+    top: 40%;
+    transform: translateX(-30%) translateY(-40%);
 }
-img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  pointer-events: none;
+.birds5{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    /* transform: translate(-50%,250%); */
+    transition: all 0.5s;
+    transform: translateX(-20%);
 }
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.birds6{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    right: 30%;
+    /* transform: translate(-50%,250%); */
+    transition: all 3s;
+    transform: translateX(-70%) translateY(10%);
+
 }
-#shooterBlue{
-  width: 400px;
-  height: 200px;
+.birds7{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 3s;
+    transform: translateX(-70%) translateY(-40%);
+
+
+}
+.birds8{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 1s;
+    transform: translateX(-70%) translateY(70%);
+
+
+}
+.birds9{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 0.5s;
+    transform: translateX(-70%) translateY(-70%);
+
+
+}
+.birds10{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 1s;
+    transform: translateX(-70%) translateY(-23%);
+
+
+}
+.birds11{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 0.7s;
+    transform: translateX(-70%) translateY(-70%);
+
+
+}
+.birds12{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 1s;
+    transform: translateX(-70%) translateY(-70%);
+
+
+}
+.birds13{ 
+    width: 150px;
+    height: 150px;
+    position: relative ;
+    top: 20%;
+    /* transform: translate(-50%,250%); */
+    transition: all 2s;
+    transform: translateX(-70%) translateY(-20%);
+
+
 }
 
-#shooterRed{
-  width: 400px;
-  height: 400px;
-}
-button {
- padding: 17px 40px;
- border-radius: 50px;
- border: 0;
- margin-left: 5px;
- margin-top: 10px;
- background-color: white;
- box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
- letter-spacing: 1.5px;
- text-transform: uppercase;
- font-size: 15px;
- transition: all .5s ease;
+p.img{
+    display: inline;   
+    display: inline-block;
 }
 
-button:hover {
- letter-spacing: 3px;
- background-color: hsl(261deg 80% 48%);
- color: hsl(0, 0%, 100%);
- box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+.cursor,.blood{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    /* transform : translateX(-50%,-50%); */
+    position: fixed;
+    transform: translate(calc(-70% + 30px), -44%);
 }
+.test {
+    color: white;
+    position : absolute ;
+    justify-content: space-between;
+    left : 308 px 
+    margin : 15 px 
+    font-size: 24px;
+    font-weight: bold;
+    border: 5px solid green;
+    padding: 12px;
+    top : 13px
+    box-sizing: border-box;
+    box-radius:114px ;
+    align-items: center;
+  }
+  
+   .counter {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid green;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+  } 
+  
+
+
+
 
 button:active {
  letter-spacing: 3px;
